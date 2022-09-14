@@ -19,7 +19,7 @@ body{
 }
 
 .grid-item{
-    border: 2px solid #fff;
+    
     margin: 7px;
 }
 
@@ -34,6 +34,13 @@ body{
     font-size: 40px;
     
 }
+
+.grid-item:nth-child(2){
+    padding: 13px;
+    text-align: right;
+    
+}
+
 
 .grid-item:nth-child(3){
     grid-column: 1/span 4;
@@ -69,6 +76,12 @@ body{
     width: 140px;
 }
 
+.btn1:hover{
+    background-color: #5f3;
+    transition: 2s;
+}
+
+
 .grid-item:nth-child(8){
     text-align: left;
     
@@ -81,27 +94,58 @@ body{
     text-align: center;
 }
 
-.grid-item:nth-child(10){
+.imagen{
     background-color: aqua;
     grid-row: 6/span 5;
 }
 
-.grid-item:nth-child(11){
-    background-color: aqua;
-    grid-row: 6/span 5;
+.Nombre{
+    color: #fff;
+    text-align: center;
+    font-size: 26px;
+    padding: 10px;  
+    
 }
 
-.grid-item:nth-child(12){
-    background-color: aqua;
-    grid-row: 6/span 5;
-}
-
-.grid-item:nth-child(13){
-    background-color: aqua;
-    grid-row: 6/span 5;
-}
-.grid-item:nth-child(14){
+.grid-item:nth-child(18){
     grid-column: 1/span 4;
-    grid-row: 11 /span 3;
+    grid-row: 12 /span 2;
+    display: block;
+    background-color: transparent;
 }
 
+
+.usuario{
+    color: #fff;
+    object-fit:scale-down;
+}
+
+
+#grid-footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    height: 100%;
+   
+    
+}
+
+#grid-footer > div{
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+}
+
+#grid-footer > div:nth-child(1){
+    grid-column: 1/ span 2;
+}
+
+#grid-footer > div:nth-child(2){
+    grid-column: 3 / span 2;
+    
+}
+
+#grid-footer > div:nth-child(3){
+    grid-column: 1 / span 4;
+    
+}
