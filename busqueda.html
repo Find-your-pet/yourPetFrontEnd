@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/busqueda.css">
+    <!-- Los íconos los traigo de https://boxicons.com/. Allá lo busco en "usage" y luego es copiar y pegar -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>Búsqueda</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h2 class = "logotipo">Find Your Pet</h2>
+
+        <div class = "iconos">
+            <div class = "border-icon">
+                <i class='bx bx-user-check'></i>
+                <h2>Iniciar sesión</h2>
+            </div>
+            <div class = "border-icon">
+                <i class='bx bx-user-plus'></i>
+                <h2>Registrarse</h2>
+            </div>
+                        
+        </div>
+    </header>
+
+    <h2 class = "titulos">Aplicar métodos de búsqueda</h2>
+
+    <form class = "formulario">
+
+        <div class = criterios>
+            <div class = "nombre-ciudad">
+                <h2>Nombre</h2>
+                <input type="text" placeholder="Ingrese el nombre">
+                <h2>Ciudad</h2>
+                <input type="text" placeholder="Ingrese la ciudad">
+            </div>
+            <div class = "genero-tamaño">
+                <h2>Género</h2>
+                <input type="text" placeholder="Ingrese el género">
+                <h2>Tamaño</h2>
+                <input type="text" placeholder="Ingrese el tamaño">
+            </div>
+        </div>
+        <div class = boton>
+            <input type="button" value="Buscar">
+        </div>
+    </form>
+    
+    <h2 class = titulos>Resultado</h2>
+
+    <div class="resultado">
+        <div class="img">
+            <img src="/Imagenes/gato.jpg" alt="">
+            <h2>Martin</h2>
+        </div>
+        <div class="img">
+            <img src="/Imagenes/gato.jpg" alt="">
+            <h2>Tobi</h2>
+        </div>
+        <div class="img">
+            <img src="/Imagenes/gato.jpg" alt="">
+            <h2>Canela</h2>
+        </div>
+        <div class="img">
+            <img src="/Imagenes/gato.jpg" alt="">
+            <h2>Lucas</h2>
+        </div>
+
+    </div>
+
+</body>
+</html>

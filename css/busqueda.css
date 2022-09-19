@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: white;
+    background-color: black;
+    margin-bottom: 5rem;
+}
+
+header{
+    width: 90%;
+    margin: 20px auto; /* Esto hace que el margen sea el mismo a lado y lado del header */
+    display: flex;
+    justify-content:space-between;
+    margin-top: 2rem;
+}
+
+
+.logotipo{
+    align-self: flex-start;
+    font-size: xx-large;
+}
+
+.iconos{
+    font-size: x-large;
+    display: flex;
+}
+
+.border-icon{
+    display: inline-flexbox;
+    margin-right: 3rem;
+    text-align: center;
+
+}
+
+.bx{
+    padding: 0.5rem;
+    border-radius: 70%;
+    transition: all .3s ease-in;
+}
+
+.bx:hover{
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.border-icon h2{
+    font-size: small;
+}
+
+.titulos{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.formulario{
+    width: 80%;
+    display: flex;
+    margin: 20px auto;
+}
+
+.formulario h2{
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+.nombre-ciudad, .genero-tamaño{
+    display:flex;
+    margin: 1rem;
+    max-width:fit-content;
+
+}
+
+.criterios h2{
+    font-size: large;
+}
+
+
+.boton{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.formulario input[type="button"]{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    padding: .7rem;
+    border-radius: .5rem;
+    background-color: darkgrey;
+    font-weight: 600px;
+    margin-top: auto;
+    font-size: .8rem;
+    cursor: pointer;
+    color: black;
+    transition: all .3s ease-in;
+}
+
+.formulario input:hover{ /* para el sombreado cuando pase el cursor por encima */
+    background-color: white;
+}
+
+.resultado{
+    width: 75%;
+    display: flex;
+    margin: 20px auto;
+    justify-content:space-between;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.img{
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    transition: all .1s ease-in;
+}
+
+.img:hover{
+    height: 310px;
+    width: 310px;
+    cursor: pointer;
+}
+
+.img h2{
+    font-size:small;
+    margin-top: .5rem;
+    color: darkgray;
+}
+
+
