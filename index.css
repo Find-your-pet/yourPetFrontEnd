@@ -20,29 +20,25 @@ body{
 }
 
 .grid-item{
-    
     margin: 7px;
-}
-
-.grid-item:first-child{
-    padding: 10px;
-    grid-column: 1/span 3; 
-     
 }
 
 .grid-item h1{
     color: #fff;
     font-size: 50px;
-    
 }
 
 /*Aqui estan los iconos de sesion y demas*/
 
+.icon{
+    grid-column: 1/span 4;
+}
+
 #grid-icon{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 20px);
-    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 20px);
+        
 }
 
 #grid-icon > div{
@@ -52,22 +48,58 @@ body{
 }
 
 #grid-icon > div:nth-child(1){
-    grid-column: 2/span 1;
+    grid-column: 1/span 1;
+    grid-row: 1/span 2;
         
 }
 
-#grid-icon > div:nth-child(3){
-    grid-column: 2/span 1;
-   }
+#grid-icon > div:nth-child(2){
+    grid-column: 2/span 2;
+    grid-row: 1/span 2;
+    text-align: left;    
+}
 
-#grid-icon > div > a{
+#grid-icon > div> img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+#grid-icon > div:nth-child(3){
+    grid-column: 4/span 1;
+    grid-row: 1/span 2;    
+}
+
+#grid-izicon{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 20px);
+    
+}
+
+#grid-izicon > div:nth-child(1){
+    grid-column: 2/span 1;
+}
+
+#grid-izicon > div:nth-child(3){
+    grid-column: 2/span 1;
+    grid-row: 2/span 1;
+}
+
+#grid-izicon > div:nth-child(4){
+    grid-column: 3/span 1;
+    grid-row: 2/span 1;
+}
+
+#grid-izicon > div > a{
    color: #fff;
 }
 
 /*aqui termina iconos*/
 
 
-.grid-item:nth-child(3){
+.grid-item:nth-child(2){
     grid-column: 1/span 4;
     padding: 13px;
     text-align: center;
@@ -142,15 +174,31 @@ body{
 
 #grid-imagenes{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
     height: 100%;
-  
 }
 
 #grid-imagenes > div{
-    background-color: #fff;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     margin: 20px;
+            
 }
+
+#grid-imagenes > div > img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 300ms;
+        
+}
+
+#grid-imagenes img:hover{
+    transform: scale(1.10);
+}
+
 
 /*Aqui comienza las nombres*/
 
@@ -201,4 +249,26 @@ body{
 #grid-footer > div:nth-child(3){
     grid-column: 1 / span 4;
     
+}
+
+/*aqui empiezan las redes sociales*/
+
+#grid-redes{    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+}
+
+#grid-redes > div:nth-child(1){
+    grid-column: 2 / span 1;
+    text-align: justify;
+}
+
+#grid-redes > div:nth-child(2){
+    grid-column: 3 / span 1;
+    text-align: left;
+}
+
+#grid-redes > div > i{
+    color: aqua;
 }
