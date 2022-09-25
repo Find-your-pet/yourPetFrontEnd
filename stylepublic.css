@@ -1,0 +1,112 @@
+*{
+    background-color: black;
+}
+
+body{
+    font-family: 'calibri';
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color:white;
+
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color:black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.encabezado {
+  display: flex;
+  color:white;
+  align-items: center;
+
+}
+nav a{
+    font-weight: 600;
+    padding-right: 30px;
+
+}
+nav a:hover{
+    color: pink;
+
+}
+@media (max-width:700px){
+    header{
+        flex-direction :column;
+    }
+    nav{
+        padding:10px 0px;
+    }
+}
+.perfil{
+    color:white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.perfil img{
+    padding-left:80px;
+    width: 300px;
+    height: 250px;
+}
+.nombre{
+    color:aliceblue;
+    margin-top: 80px;
+    padding-left: 190px;
+
+}
+.botones a{
+    
+    color: white;
+    font-family: 'calibri';
+    font-size: 23px;
+    font-weight: 600;
+    padding: 0px;
+    padding-left: 100px;
+}
+.botones a:hover{
+    color: pink;
+}
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    div{
+        padding: 10px opx;
+    }
+}
+
+
+#grid-perfil {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: black;
+ 
+}
+#grid-perfil > div:nth-child(1){
+    /*grid-column: 1/span1;*/
+    background: black;
+}
+#grid-perfil > div:nth-child(2){
+    grid-column: 2/span 2;
+   
+}
+.letra{
+    color:white;
+    padding-left: 600px;
+    text-align: auto;
+    margin: auto;
+    padding: 0px;
+    margin-top: 40px;
+    border-radius: none;
+    font-family: 'calibri';
+    color:white;
+    width: 360px;
+}
+
