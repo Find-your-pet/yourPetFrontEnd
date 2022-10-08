@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/94facddb1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="publicar.css">
+    <script src="api/Entity.js"></script>
+    <script src="api/Pet.js"></script>
+    <script src="views/pets.js"></script>
+    <title>Find Your Pet</title>
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/dog-pee.png">
+</head>
+<body>
+    <header>
+    <div class="grid-container">
+                 
+        <div class="grid-item icon">
+            <div id="grid-icon">
+                <div><h1>Find Your Pet</h1></div> 
+                <div><img src="http://190.60.244.116/FOTOSREFORMATEADAS/perro.png"></div>
+                    <div>
+                        <section id="grid-izicon">
+                            <div><i class="fa-solid fa-right-from-bracket" id="icon"></i></div>
+                            <div><a href="../scripts/Index.html">Cerrar Sesion</a></div>
+                        </section> 
+                    </div>
+            </div>
+        </div>
+    </header>
+        
+        <div class="grid-item imagenes">
+            <section id="grid-imagenes">
+                <div>1</div>
+                <div>
+                    <form id="grid-formulario">
+                        <div>
+                            <input type="hidden" name="id" value="0">
+                            <input type="text" class="form_input" placeholder="Ingrese una Descripcion" name="descripcion">
+                            <input type="text" class="form_input" placeholder="Ingrese el Nombre" name="nombre" id="nombre">
+                            <input type="text" class="form_input" placeholder="Ingrese el genero" name="genero">
+                            <input type="text" class="form_input" placeholder="Ingrese la edad" name="edad">
+                            <!--<input type="date" class="form_input" placeholder="Ingrese la fecha de perdida" name="fecha">-->
+                            <input type="text" class="form_input" placeholder="Ingrese la raza" name="raza">
+                            <input type="text" class="form_input" placeholder="Ingrese el tamaño" name="tamano"> 
+                            <input type="text" class="form_input" placeholder="Ingrese el color" name="color">  
+                            <button class="btn1">Registrar</button>
+                            <!--<div class="grid-item boton">
+                                <section id="grid-boton">
+                                    
+                                    <button class="btn1">Registrar</button>
+                                </section>
+                            </div>-->  
+                            
+                        </div>
+                    </form>
+                </div>
+             
+            </section>
+        </div>
+        <div id="table">
+        <table>
+            <thead>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Genero</th>
+                <th>Raza</th>
+                <th>Edad</th>
+                <th>Tamaño</th>
+                <th>Color</th>
+                <th>Descripcion</th>
+                <th>Action</th>
+                <th></th>
+            </thead>
+            <tbody></tbody>
+        </table>
+        </div>
+
+        <div class="grid-item footer">
+            <section id="grid-footer">
+                <div>
+                    <h4>Contactanos</h4>
+                    <p>
+                    Telefono: 317xxxxxx<br>
+                    Bogotá Colombia<br>
+                    Email: findyourpet@gmail.com<br>
+                    </p>
+                </div>
+                <div>
+                    <section id="grid-redes">
+                        <div><i class="fa-brands fa-3x fa-facebook redes"></i></div>
+                        <div><i class="fa-brands fa-3x fa-instagram redes"></i></div>
+                    </section>
+                </div>   
+                <div>
+                    <p>
+                    © Copyright Findyourpet. All Rights Reserved<br>
+                    Designed by Findyourpet<br>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

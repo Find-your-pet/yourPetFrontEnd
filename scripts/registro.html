@@ -5,38 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="api/Entity.js"></script>
+    <script src="api/User.js"></script>
+    <script src="views/users.js"></script>
     <title>Find Your Pet</title>
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/dog-pee.png">
     
 </head>
 <body>
-    <h2>Find Your Pet</h2>
+    <a href="../scripts/Index.html"><h2>Find Your Pet</h2></a>
     <p>¡Bienvenido!</p>
     <div class="flex-container">
             <div class="izq"></div>
             <div class="centro">
-                <form class="form">
+                <form class="form" id="formulario">
                     <div class="form_section">
+                        <input type="hidden" name="id" value="0">
                         <h3>Nombres:</h3>
-                        <input type="text" class="form_input" placeholder="Ingrese sus nombres">
+                        <input type="text" class="form_input" placeholder="Ingrese sus nombres" name="nombres">
                     </div>
                     <div class="form_section">
                         <h3>Apellidos:</h3>
-                        <input type="text" class="form_input" placeholder="Ingrese sus apellidos">
+                        <input type="text" class="form_input" placeholder="Ingrese sus apellidos" name="apellidos">
                     </div>
                     <div class="form_section">
                         <h3>Telefono:</h3>
-                        <input type="text" class="form_input" placeholder="Ingrese su telefono">
+                        <input type="text" class="form_input" placeholder="Ingrese su telefono" name="telefono">
                     </div>
                     <div class="form_section">
                         <h3>Email:</h3>
-                        <input type="email" class="form_input" placeholder="Ingrese su Email">
+                        <input type="email" class="form_input" placeholder="Ingrese su Email" name="email">
                     </div>
                     <div class="form_section">
                         <h3>Contraseña:</h3>
-                        <input type="password" class="form_input" placeholder="Ingrese su Contraseña">
+                        <input type="password" class="form_input" placeholder="Ingrese su Contraseña" name="contrasena">
                     </div>
                     <div>
-                        <Button class="form_button">Registrarse</Button>
+                        <button class="form_button">Registrarse</button>
                     </div>
                     <div class="form_section">
                         <div>
